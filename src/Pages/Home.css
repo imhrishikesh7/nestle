@@ -1,0 +1,410 @@
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  /* font-size: clamp(1rem, 5vw, 5rem); */
+  font-weight: bold;
+  text-align: left;
+  letter-spacing: 1px;
+  /* margin-right: -0.5em; */
+  color: #ccc;
+
+  /* max-width: 1200px; */
+  /* white-space: nowrap; */
+}
+
+.banner-content h2 {
+  font-size: 100px;
+  position: absolute;
+  /* left: 50%; */
+  top: 20%;
+  transform: translateY(-50%);
+  width: fit-content;
+  /* height: fit-content; */
+  text-align: left;
+  line-height: 1.1;
+  z-index: 2;
+  color: white;
+  /* border: 2px solid white; */
+  font-weight: 700;
+  font-stretch: condensed;
+
+}
+
+.words-wrapper {
+  font-size: 45px;
+  position: absolute;
+  /* left: 50%; */
+  top: 78%;
+  /* border: 2px solid white; */
+  /* transform: translateY(-50%); */
+  width: fit-content;
+  height: fit-content;
+  text-align: left;
+  font-weight: 600;
+  z-index: 2;
+  color: white;
+}
+
+.banner-text-wrapper {
+  width: 600px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  height: 40%;
+
+  /* padding: 4%; */
+
+
+}
+
+
+a {
+  text-align: left;
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  visibility: visible;
+  z-index: -1;
+}
+
+section .outer,
+section .inner {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+section .bg {
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+
+section .bg .clip-text {
+  overflow: hidden;
+}
+
+.first .bg {
+  position: relative;
+}
+
+.first video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nestlegirl {
+  position: absolute;
+  top: 15%;
+  /* transform: translateY(-50%); */
+  left: 5%;
+  width: 45vw;
+}
+
+.md-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 100vh;
+}
+
+.md-msg-wrap {
+  position: absolute;
+  top: 35%;
+  /* left: 50%; */
+  /* transform: translateY(-50%); */
+  width: 50%;
+}
+
+.md-msg-wrap .quotes-icon {
+  position: absolute;
+  top: -30%;
+}
+
+.md-msg-wrap h1 {
+  color: black;
+  font-size: 50px;
+  font-stretch: extra-condensed;
+  line-height: 1.1;
+}
+
+.md-msg-wrap h3 {
+  color: black;
+  font-size: 30px;
+  margin: 0;
+  font-stretch: extra-condensed;
+}
+
+.md-msg-wrap p {
+  color: black;
+  font-size: 26px;
+  font-stretch: extra-condensed;
+  margin: 0;
+  font-weight: 400;
+}
+
+.md-avatar-wrap {
+  position: absolute;
+  bottom: -1%;
+  left: 50%;
+  width: 50%;
+}
+
+.md-avatar-wrap img {
+  width: 100%;
+}
+
+.read-msg-btn {
+  position: relative;
+  width: 160px;
+  margin: 5% 0;
+  display: flex;
+  background-color: white;
+  color: #2DADA1;
+  font-weight: 600;
+  text-decoration: none;
+  align-items: center;
+  overflow-x: hidden;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-msg-btn:hover {
+  background-color: whitesmoke;
+}
+
+.msg-btn-icon {
+  position: absolute;
+  right: 14px;
+  /* Original position */
+  transition: right 0.5s ease;
+  /* Transition for the right property */
+}
+
+.read-msg-btn:hover .msg-btn-icon {
+  /* right: calc(100% + 10px); */
+  right: 14%;
+  animation: appearFromRight 0.5s forwards;
+  /* Animation to make the icon reappear from the right */
+}
+
+@keyframes appearFromRight {
+  from {
+    /* right: calc(100% + 10px); Start position, same as hover */
+    right: -20%;
+    opacity: 0;
+    /* Initially hidden */
+  }
+
+  to {
+    right: 14px;
+    /* End position, original position */
+    opacity: 1;
+    /* Fully visible */
+  }
+}
+
+.second .bg {
+  /* background-image: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0.3) 100%),
+        url("https://64.media.tumblr.com/3de2c2eab9cbac5aa7c1f641eb4e7ccc/tumblr_nj8curbq8F1sbh9awo1_500.jpg"); */
+
+}
+
+.third .bg {
+  background-image: url('/purpose-bg.png');
+  /* background-color: white; */
+  display: flex;
+  align-items: center;
+}
+
+.our-purpose {
+  /* border: 2px solid red; */
+
+  height: 70%;
+  width: 87%;
+  /* margin: auto; */
+}
+.purpose-p{
+  color: black;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+}
+.purpose-h5{
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+}
+
+.third h2 {
+  color: black;
+  font-size: 64px;
+  text-align: left;
+  width: fit-content;
+  font-weight: 700;
+  font-stretch: condensed;
+  margin: 1% 0;
+  /* margin: 0; */
+}
+.purpose-icons-row{
+  width: 40%;
+  height: 100px;
+  justify-content: space-between;
+  margin: 2% 0;
+  /* border: 2px solid black; */
+}
+.purpose-icons-row img{
+  width: 16%;
+
+
+}
+.fourth .bg {
+  background: linear-gradient(49deg, #ff8367, #58ddcc);
+    background-size: 400% 400%;
+
+    -webkit-animation: gradient-scene 24s ease infinite;
+    -moz-animation: gradient-scene 24s ease infinite;
+    -o-animation: gradient-scene 24s ease infinite;
+    animation: gradient-scene 24s ease infinite;
+}
+@-webkit-keyframes gradient-scene {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+@-moz-keyframes gradient-scene {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+@-o-keyframes gradient-scene {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+@keyframes gradient-scene {
+  0%{background-position:0% 83%}
+  50%{background-position:100% 18%}
+  100%{background-position:0% 83%}
+}
+
+.fifth .bg {
+  background-image: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.3) 100%),
+    url("https://64.media.tumblr.com/ecdf0fe067b5ffccbb05a647423eaad2/tumblr_p2nzkxTvQC1vvczb6o1_540.jpg");
+  background-position: 50% 45%;
+}
+
+.section-heading {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-heading i {
+  font-size: 3rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-heading i.fa-github-alt {
+  font-size: 3.2rem;
+}
+
+
+/* **************************************** */
+/* **************************************** */
+.words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+
+.words-wrapper b {
+  opacity: 0;
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+
+.words-wrapper .is-visible {
+  position: relative;
+  opacity: 1;
+  animation: push-in 0.6s;
+}
+
+.words-wrapper .is-hidden {
+  animation: push-out 0.6s;
+}
+
+@keyframes push-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  70% {
+    opacity: 1;
+    transform: translateX(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes push-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  60% {
+    opacity: 0;
+    transform: translateX(110%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}

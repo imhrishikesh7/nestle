@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Nestle Text Book';
+    src: url('NestleText-Book.eot');
+    src: local('Nestle Text Book'), local('NestleText-Book'),
+        url('NestleText-Book.eot?#iefix') format('embedded-opentype'),
+        url('NestleText-Book.woff2') format('woff2'),
+        url('NestleText-Book.woff') format('woff'),
+        url('NestleText-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nestle Text Book';
+    src: url('NestleText-Bold.eot');
+    src: local('Nestle Text Bold'), local('NestleText-Bold'),
+        url('NestleText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('NestleText-Bold.woff2') format('woff2'),
+        url('NestleText-Bold.woff') format('woff'),
+        url('NestleText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nestle Text Book';
+    src: url('NestleText-BoldItalic.eot');
+    src: local('Nestle Text Bold Italic'), local('NestleText-BoldItalic'),
+        url('NestleText-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('NestleText-BoldItalic.woff2') format('woff2'),
+        url('NestleText-BoldItalic.woff') format('woff'),
+        url('NestleText-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nestle Text Book';
+    src: url('NestleText-Italic.eot');
+    src: local('Nestle Text Italic'), local('NestleText-Italic'),
+        url('NestleText-Italic.eot?#iefix') format('embedded-opentype'),
+        url('NestleText-Italic.woff2') format('woff2'),
+        url('NestleText-Italic.woff') format('woff'),
+        url('NestleText-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nestle Text';
+    src: url('NestleText-LightItalic.eot');
+    src: local('Nestle Text Light Italic'), local('NestleText-LightItalic'),
+        url('NestleText-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('NestleText-LightItalic.woff2') format('woff2'),
+        url('NestleText-LightItalic.woff') format('woff'),
+        url('NestleText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nestle Text';
+    src: url('NestleText-Light.eot');
+    src: local('Nestle Text Light'), local('NestleText-Light'),
+        url('NestleText-Light.eot?#iefix') format('embedded-opentype'),
+        url('NestleText-Light.woff2') format('woff2'),
+        url('NestleText-Light.woff') format('woff'),
+        url('NestleText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
